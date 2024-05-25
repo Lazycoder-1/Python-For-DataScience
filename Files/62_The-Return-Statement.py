@@ -1,4 +1,5 @@
 # using the return method/function
+# the return keyword converts it to it's correct data type
 
 # def rookie():
 #     '''The best drama series ever made'''
@@ -20,6 +21,17 @@ def play_game(answer):
         return True
     else:
         return False
-print(play_game('exacy'))
+
+#print(play_game('yes'))
+
+#another scenario
+if play_game('yes') == True:
+    print('Good choice, let us continue the game')
+else:
+    print('See you next time, bye')
+
+
+
+
 
 
