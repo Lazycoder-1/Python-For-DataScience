@@ -11,11 +11,20 @@
 
 # Local
 # only accessible within function or lambda function   e.g below
-def x():
-    num = 20
-    return num
-print(num)
+# def x():
+#     num = 20
+#     return num
+# print(num)
 # This error NameError: name 'num' is not defined will occur because num is only function scope available.
 
+# Enclosing = Non local scope
+def space():
+    word = 'Enclosing'
 
+    def nested_space():
+        word = 'Local'
+        print('Hello from '+ word)
+    nested_space()
+
+print(space())
 
