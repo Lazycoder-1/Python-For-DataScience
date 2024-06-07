@@ -18,13 +18,29 @@
 # This error NameError: name 'num' is not defined will occur because num is only function scope available.
 
 # Enclosing = Non local scope
+# def space():
+#     word = 'Enclosing'
+#
+#     def nested_space():
+#         word = 'Local'
+#         print('Hello from '+ word)
+#     nested_space()
+#
+# print(space())
+
+# Global = the global variable
+# it cannot be within a function where it is not defined...
+word = 'Global'
 def space():
-    word = 'Enclosing'
+    #word = 'Enclosing'
 
     def nested_space():
-        word = 'Local'
+        #word = 'Local'
         print('Hello from '+ word)
     nested_space()
 
-print(space())
+# Built In
+# thus the built in functions
+list()
 
+print(space())
